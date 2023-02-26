@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-row">
+          <div class="overlay visually-hidden"></div>
+          <div>
+            <img src="images/logo.svg" alt="the logo of snap" />
+          </div>
+          <button
+            aria-expanded="false"
+            class="toggle-button hide-for-desktop"
+          ></button>
+          <nav class="main-navigation" aria-hidden="true">
+            <ul class="main-navigation-list">
+              <li class="dropdown" data-dropdown>
+                <button
+                  class="dropdown-toggler"
+                  aria-expanded="false"
+                  data-dropdown-button
+                  class="nav-link"
+                  aria-controls="menu-1"
+                >
+                  Features
+                </button>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                  id="menu-1"
+                >
+                  <li class="dropdown-menu--item">
+                    <div>
+                      <img src="images/icon-todo.svg" alt="" />
+                    </div>
+                    <a href="#">Todo List</a>
+                  </li>
+                  <li class="dropdown-menu--item">
+                    <div>
+                      <img src="images/icon-calendar.svg" alt="" />
+                    </div>
+                    <a href="#">Calendar</a>
+                  </li>
+                  <li class="dropdown-menu--item">
+                    <div>
+                      <img src="images/icon-reminders.svg" alt="" />
+                    </div>
+                    <a href="#">Reminders</a>
+                  </li>
+                  <li class="dropdown-menu--item">
+                    <div>
+                      <img src="images/icon-planning.svg" alt="" />
+                    </div>
+                    <a href="#">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown" data-dropdown>
+                <button
+                  class="dropdown-toggler"
+                  aria-expanded="false"
+                  data-dropdown-button
+                  class="nav-link"
+                  aria-controls="menu-2"
+                >
+                  Company
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-company has-fade"
+                  id="menu-2"
+                >
+                  <li class="dropdown-menu--item">
+                    <a href="#">History</a>
+                  </li>
+                  <li class="dropdown-menu--item"><a href="#">Our Team</a></li>
+                  <li class="dropdown-menu--item"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div class="buttons">
+              <button class="button-login"><a href="#">Login</a></button>
+              <button class="button-register"><a href="#">Register</a></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <picture>
+            <source
+              media="(min-width: 770px)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <img class="hero-image" src="images/image-hero-mobile.png" alt="" />
+          </picture>
+          <div class="hero-section--text">
+            <h1 class="hero-title">Make remote work</h1>
+            <p class="hero-paragrapgh">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="hero-section-btn">Learn more</button>
+            <div class="partners-logo flex ai-c jc-sa">
+              <div>
+                <img src="images/client-databiz.svg" alt="" />
+              </div>
+              <div>
+                <img src="images/client-audiophile.svg" alt="" />
+              </div>
+              <div>
+                <img src="images/client-meet.svg" alt="" />
+              </div>
+              <div>
+                <img src="images/client-maker.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  <main></main>
+    Make remote work 
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
